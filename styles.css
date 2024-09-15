@@ -1,3 +1,6 @@
+/* main.html 메인 css */
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -96,6 +99,9 @@ footer {
     border-top: 1px solid #e0e0e0;
 }
 
+
+
+/* login.html 로그인 css */
 .login-container {
     width: 100%;
     max-width: 400px;
@@ -125,14 +131,14 @@ footer {
 }
 
 .form-group input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button[type="submit"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     background-color: #6b8057;
     color: white;
@@ -157,4 +163,229 @@ button[type="submit"]:hover {
 
 .signup-link a:hover {
     text-decoration: underline;
+}
+
+
+
+/* signup.html 회원가입 css */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+    color: #6b8057;
+}
+
+.login-link {
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #6b8057;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* community.html 커뮤니티 css */
+.community-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.community-container h2 {
+    color: #6b8057;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.community-container p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 뜨개랑 메인 글씨 눌렀을 때 밎줄 생기는 현상 제거하는 코드 */
+.no-underline { 
+    text-decoration: none;
+    color: inherit; /* 부모 요소의 색상 상속 */
+}
+
+.no-underline:hover {
+    color: inherit; /* Hover 시에도 색상이 변하지 않도록 */
+}
+
+.com_select{
+    color: #afee6f;
+}
+
+
+
+/* resource.html 리소스 페이지 CSS */
+.resource-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.resource-container h2 {
+    color: #6b8057;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.resource-container p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin: 10px 0;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: #6b8057;
+    font-size: 1.2em;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar에서 리소스 메뉴 강조 */
+.res_select {
+    color: #afee6f;
+}
+
+
+
+/* shop.html 쇼핑 페이지 CSS */
+.shop-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.shop-container h2 {
+    color: #6b8057;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.shop-container p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.shop-list {
+    list-style: none;
+    padding: 0;
+}
+
+.shop-list li {
+    margin: 10px 0;
+}
+
+.shop-list a {
+    text-decoration: none;
+    color: #6b8057;
+    font-size: 1.2em;
+}
+
+.shop-list a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar에서 쇼핑 메뉴 강조 */
+.shop_select {
+    color: #afee6f;
+}
+
+
+
+/* contact.html 연락처 페이지 CSS */
+.contact-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.contact-container h2 {
+    color: #6b8057;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #6b8057;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar에서 연락처 메뉴 강조 */
+.contact_select {
+    color: #afee6f;
 }
