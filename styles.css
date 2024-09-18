@@ -63,17 +63,64 @@ button:hover {
     border-radius: 5px;
 }
 
+.search-bar button {
+    padding: 10px 20px;
+    border: 1px solid #6b8057;
+    border-left: none; /* 인풋과 버튼 사이의 중복 테두리 제거 */
+    background-color: #6b8057;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* 오른쪽 모서리 둥글게 */
+}
+
+.search-bar button:hover {
+    background-color: #557b4c;
+}
+
 .section-title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #6b8057;
     margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4개의 이미지를 가로로 배치 */
     gap: 20px;
     padding: 20px;
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 자동 여백으로 중앙 정렬 */
+}
+
+.section-title-shopping{
+    font-size: 1.8em;
+    color: #6b8057;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.shop-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-shopping {
+    display: flex;
+    overflow-x: scroll; /* 가로 스크롤을 활성화 */
+    scroll-behavior: smooth; /* 부드러운 스크롤 */
+    gap: 10px;
+    padding: 10px 0; /* 상하 패딩 */
+    max-width: 100%; /* 최대 너비를 부모 요소에 맞게 조정 */
+    margin: 0 auto; /* 자동 여백으로 중앙 정렬 */
+}
+
+.shop-slider button:hover {
+    background-color: #557b4c;
 }
 
 .item {
@@ -83,13 +130,18 @@ button:hover {
     position: relative;
 }
 
+.item-shopping {
+    flex: 0 0 auto; /* 플렉스 컨테이너에서 고정된 너비 사용 */
+    width: 200px; /* 각 이미지의 너비 */
+    background-color: #ccc;
+    position: relative;
+}
+
 .item img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -240,8 +292,8 @@ button[type="submit"]:hover {
 
 
 
-/* resource.html 리소스 페이지 CSS */
-.resource-container {
+/* ai.html 리소스 페이지 CSS */
+.ai-container {
     text-align: center;
     margin: 50px auto;
     padding: 20px;
@@ -252,40 +304,40 @@ button[type="submit"]:hover {
     background-color: #fff;
 }
 
-.resource-container h2 {
+.ai-container h2 {
     color: #6b8057;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.resource-container p {
+.ai-container p {
     font-size: 1.2em;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.resource-list {
+.ai-list {
     list-style: none;
     padding: 0;
 }
 
-.resource-list li {
+.ai-list li {
     margin: 10px 0;
 }
 
-.resource-list a {
+.ai-list a {
     text-decoration: none;
     color: #6b8057;
     font-size: 1.2em;
 }
 
-.resource-list a:hover {
+.ai-list a:hover {
     text-decoration: underline;
 }
 
 /* Navigation Bar에서 리소스 메뉴 강조 */
-.res_select {
+.ai_select {
     color: #afee6f;
 }
 
@@ -342,8 +394,8 @@ button[type="submit"]:hover {
 
 
 
-/* contact.html 연락처 페이지 CSS */
-.contact-container {
+/* design.html 연락처 페이지 CSS */
+.design-container {
     text-align: center;
     margin: 50px auto;
     padding: 20px;
@@ -354,38 +406,38 @@ button[type="submit"]:hover {
     background-color: #fff;
 }
 
-.contact-container h2 {
+.design-container h2 {
     color: #6b8057;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.contact-container p {
+.design-container p {
     font-size: 1.2em;
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.contact-list {
+.design-list {
     list-style: none;
     padding: 0;
 }
 
-.contact-list li {
+.design-list li {
     margin: 10px 0;
 }
 
-.contact-list a {
+.design-list a {
     text-decoration: none;
     color: #6b8057;
 }
 
-.contact-list a:hover {
+.design-list a:hover {
     text-decoration: underline;
 }
 
 /* Navigation Bar에서 연락처 메뉴 강조 */
-.contact_select {
+.design_select {
     color: #afee6f;
 }
