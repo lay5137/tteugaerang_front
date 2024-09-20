@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* main.html 메인 css */
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -250,31 +261,9 @@ button[type="submit"]:hover {
     text-decoration: underline;
 }
 
-
-
 /* community.html 커뮤니티 css */
-.community-container {
-    text-align: center;
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 800px;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-.community-container h2 {
-    color: #6b8057;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.community-container p {
-    font-size: 1.2em;
-    color: #333;
-    line-height: 1.6;
-}
+/* 상단 메뉴바 설정 */
+/* community.css로 이동*/
 
 /* 뜨개랑 메인 글씨 눌렀을 때 밎줄 생기는 현상 제거하는 코드 */
 .no-underline { 
