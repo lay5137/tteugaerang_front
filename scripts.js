@@ -1,32 +1,30 @@
-// 로그인 및 회원가입 버튼 클릭 시 해당 페이지로 이동
 document.addEventListener('DOMContentLoaded', function() {
     const loginButton = document.getElementById('login-btn');
     const signupButton = document.getElementById('signup-btn'); 
 
-    loginButton.addEventListener('click', function() {
-        window.location.href = 'login.html';
-    });
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
-    signupButton.addEventListener('click', function() {
-        window.location.href = 'signup.html';
-    });
+    if (isLoggedIn) {
+        loginButton.textContent = '마이페이지';
+        loginButton.id = 'mypage-btn';
+        signupButton.textContent = '로그아웃';
+        signupButton.id = 'logout-btn';
 
-    // 쇼핑 섹션 슬라이더 기능
-    const containerShopping = document.querySelector('.container-shopping');
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-
-    prevBtn.addEventListener('click', function() {
-        containerShopping.scrollBy({
-            left: -200, // 왼쪽으로 스크롤
-            behavior: 'smooth'
+        document.getElementById('mypage-btn').addEventListener('click', function() {
+            window.location.href = 'mypage.html';
         });
-    });
 
-    nextBtn.addEventListener('click', function() {
-        containerShopping.scrollBy({
-            left: 200, // 오른쪽으로 스크롤
-            behavior: 'smooth'
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            localStorage.setItem('isLoggedIn', 'false'); // 로그아웃 시 상태 초기화
+            window.location.reload();
         });
-    });
+    } else {
+        loginButton.addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+
+        signupButton.addEventListener('click', function() {
+            window.location.href = 'signup.html';
+        });
+    }
 });
